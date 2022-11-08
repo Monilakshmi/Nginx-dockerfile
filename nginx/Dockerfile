@@ -3,7 +3,7 @@
 FROM nginx:latest
 
 # Adding custom index.html hosted on Github 
-ADD https://github.com/Monilakshmi/Nginx-dockerfile.git /usr/share/nginx/html/
+ADD https://raw.githubusercontent.com/Monilakshmi/Nginx-dockerfile/master/nginx/index.html /usr/share/nginx/html/
 
 # Adding read permissions to custom index.html
 RUN chmod +r /usr/share/nginx/html/index.html
